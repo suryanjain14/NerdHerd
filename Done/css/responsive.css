@@ -8,7 +8,7 @@
 
 #mobile-nav-open-btn {
     font-size: 30px;
-    color: #f4c613;
+    color: #2bad93;
     cursor: pointer;
     z-index: 2;
     position: absolute;
@@ -72,7 +72,7 @@
 #mobile-nav a:focus,
 #mobile-nav-close-btn:hover,
 #mobile-nav-close-btn:focus {
-    color: #f4c613;
+    color: #2bad93;
     background: none;
 }
 
@@ -80,7 +80,7 @@
 /* Mobile nav scroll spy active state */
 
 .white-nav-top #mobile-nav ul.nav>li.active>a {
-    color: #f4c613;
+    color: #2bad93;
     font-weight: 500;
 }
 
@@ -166,9 +166,9 @@
     }
     /* Tab active state */
     .r-tabs-accordion-title.r-tabs-state-active a {
-        color: #f4c613;
+        color: #2bad93;
         font-weight: 700;
-        border-bottom: 3px solid #f4c613;
+        border-bottom: 3px solid #2bad93;
         padding-bottom: 5px;
         -webkit-transition: border-color 300ms linear;
         transition: border-color 300ms linear;
@@ -314,9 +314,9 @@
     }
     /* Tab active state */
     .r-tabs-accordion-title.r-tabs-state-active a {
-        color: #f4c613;
+        color: #2bad93;
         font-weight: 700;
-        border-bottom: 3px solid #f4c613;
+        border-bottom: 3px solid #2bad93;
         padding-bottom: 5px;
         -webkit-transition: border-color 300ms linear;
         transition: border-color 300ms linear;
