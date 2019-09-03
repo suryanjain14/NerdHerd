@@ -682,14 +682,14 @@ ul.social-list li:nth-child(3) a:hover {
 
 
 /* =========================================
-                Portfolio
+                events
 ============================================ */
 
-#portfolio {
+#events {
     padding-bottom: 160px;
 }
 
-#portfolio .vertical-heading {
+#events .vertical-heading {
     margin-bottom: 50px;
 }
 
@@ -697,7 +697,7 @@ ul.social-list li:nth-child(3) a:hover {
     padding: 0;
 }
 
-.portfolio-item {
+.events-item {
     overflow: hidden;
     position: relative;
 }
@@ -737,7 +737,7 @@ ul.social-list li:nth-child(3) a:hover {
 
 /* Zoom Effect */
 
-.portfolio-item img {
+.events-item img {
     width: 100%;
     height: auto;
     -webkit-transition: -webkit-transform .5s ease;
@@ -746,7 +746,7 @@ ul.social-list li:nth-child(3) a:hover {
     transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
-.portfolio-item:hover img {
+.events-item:hover img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
@@ -754,7 +754,7 @@ ul.social-list li:nth-child(3) a:hover {
 
 /* Overlay Effect */
 
-.portfolio-item-overlay {
+.events-item-overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -771,7 +771,7 @@ ul.social-list li:nth-child(3) a:hover {
 
 /* Item Details Effect */
 
-.portfolio-item-details {
+.events-item-details {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -780,7 +780,7 @@ ul.social-list li:nth-child(3) a:hover {
     transform: translateY(-50%);
 }
 
-.portfolio-item-details h3 {
+.events-item-details h3 {
     color: #2bad93;
     text-transform: uppercase;
     font-size: 30px;
@@ -792,7 +792,7 @@ ul.social-list li:nth-child(3) a:hover {
     transition: all 0.5s;
 }
 
-.portfolio-item-details span {
+.events-item-details span {
     display: inline-block;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
@@ -801,7 +801,7 @@ ul.social-list li:nth-child(3) a:hover {
     margin: 11px auto 5px auto;
 }
 
-.portfolio-item-details p {
+.events-item-details p {
     font-size: 17px;
     color: #fff;
     text-transform: uppercase;
@@ -816,17 +816,17 @@ ul.social-list li:nth-child(3) a:hover {
 
 /* Show Overlay on mouse over */
 
-.portfolio-item:hover .portfolio-item-details h3 {
+.events-item:hover .events-item-details h3 {
     -webkit-transform: translateY(0);
     transform: translateY(0);
 }
 
-.portfolio-item:hover .portfolio-item-details p {
+.events-item:hover .events-item-details p {
     -webkit-transform: translateY(0);
     transform: translateY(0);
 }
 
-.portfolio-item:hover .portfolio-item-overlay {
+.events-item:hover .events-item-overlay {
     opacity: 1;
 }
 

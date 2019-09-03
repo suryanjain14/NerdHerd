@@ -68,7 +68,7 @@ $(function () {
 
 
 /* =========================================
-               Portfolio
+               events
 ============================================ */
 $(window).on('load', function () {
 
@@ -81,7 +81,7 @@ $(window).on('load', function () {
         // get filter value
         var filterValue = $(this).attr('data-filter');
 
-        // filter portfolio
+        // filter events
         $("#isotope-container").isotope({
             filter: filterValue
         });
@@ -96,7 +96,7 @@ $(window).on('load', function () {
 ============================================ */
 $(function () {
 
-    $("#portfolio-wrapper").magnificPopup({
+    $("#events-wrapper").magnificPopup({
         delegate: 'a', // child items selector, by clicking on it popup will open
         type: 'image',
         gallery: {
