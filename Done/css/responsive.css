@@ -331,8 +331,8 @@
     #services-tabs h3 {
         font-size: 28px;
     }
-    /* Portfolio */
-    #portfolio {
+    /* events */
+    #events {
         padding-bottom: 0;
     }
     #isotope-filters button {
@@ -425,7 +425,7 @@
     .vertical-heading h2 {
         font-size: 22px;
     }
-    /* Portfolio */
+    /* events */
     #isotope-filters {
         text-align: center;
     }
