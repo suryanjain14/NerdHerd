@@ -1252,7 +1252,7 @@
                             </div>
 
                         </form>
-                        <h3 id="success-msg" style="text-align: center !important; margin-top:20px !important; display:none; color:#fff"> Your Request has been posted to Google Spreadsheet</h3>
+                        <h3 id="success-msg"></h3>
 
                     </div>
 
@@ -1382,7 +1382,7 @@ function postToGoogle() {
 					error: function(x, y, z)
 						{
 
-							$('#success-msg').show();
+							$('#success-msg').prepend("Thanks for your Feedback. &nbsp;We'll get back to you soon!!").show();
 							$('#form').hide();
 
 						}
