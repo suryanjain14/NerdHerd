@@ -1344,6 +1344,52 @@ $(document).ready(function(){
    });
 });
 </script> -->
+<script>
+function postToGoogle() {
+                var field1 = $("#name").val();
+                var field2 = $("#email").val();
+                var field3 = $("#phone").val();
+                var field4 = $("#subject").val();
+                var field5 = $("#message").val();
+
+				if(field1 == ""){
+					alert('Please Fill Your Name');
+					document.getElementById("name").focus();
+					return false;
+				}
+				if(field2 == ""){
+					alert('Please Fill Your Email');
+					document.getElementById("email").focus();
+					return false;
+				}
+				if(field3 == "" || field3.length > 10 || field3.length < 10){
+					alert('Please Fill Your Mobile Number');
+					document.getElementById("phone").focus();
+					return false;
+				}
+
+
+
+
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLScfp0EElhyPz5YOU3oUaUoFxdjOd5y2fM0E8ddHUi2hhGHs4Q/formResponse?",
+					data: {"entry.2005620554": field1, "entry.1045781291": field2, "entry.1166974658": field3, "entry.196156916": field4,"entry.839337160": field5},
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+					{
+					},
+					error: function(x, y, z)
+						{
+
+							$('#success-msg').show();
+							$('#form').hide();
+
+						}
+                });
+				return false;
+            }
+</script>
 
 </body>
 
