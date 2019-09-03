@@ -1207,7 +1207,7 @@
                     <!-- Contact Right -->
                     <div id="contact-right">
 
-                        <form>
+                        <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
                             <h4>Send Message</h4>
                             <p>We love to hear about us.</p>
 
@@ -1215,35 +1215,37 @@
 
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="name" placeholder="Your Name" type="text">
+                                        <input class="form-control" name="entry.2005620554" id="name" placeholder="Your Name" type="text" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="email" placeholder="Email Address" type="email">
+                                        <input class="form-control" name="entry.1045781291" id="email" placeholder="Email Address" type="email" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="phone" placeholder="Phone No." type="text">
+                                        <input class="form-control" name="entry.1166974658" id="phone" placeholder="Phone No." type="text" pattern="^\d{10}$" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="subject" placeholder="Subject" type="text">
+                                        <input class="form-control" name="entry.196156916" id="subject" placeholder="Subject" type="text" required>
                                     </div>
                                 </div>
 
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                                <textarea class="form-control" name="entry.839337160" id="message" placeholder="Message"  required></textarea>
                             </div>
 
                             <div id="submit-btn">
-                                <a class="btn btn-general btn-yellow" href="#" role="button" title="Submit">Submit</a>
+                                <a class="btn btn-general btn-yellow" id="send" role="button" title="Submit">Submit</a>
                             </div>
 
                         </form>
+                        <h3 id="success-msg" style="text-align: center !important; margin-top:20px !important; display:none; color:#fff"> Your Request has been posted to Google Spreadsheet</h3>
+
 
                     </div>
 
